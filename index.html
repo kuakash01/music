@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - web player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="effects.css">
+    <link rel="icon" type="image/x-icon" href="/icons/music.png">
+    <!-- favic -->
+</head>
+
+<body>
+    <div class="searchphone">
+        <span class="searchbarphone">
+            <input type="text" placeholder="What do you want to listen to?">
+            <p>Search</p>
+        </span>
+        <span class="cancelsearch">
+            Cancel
+        </span>
+    </div>
+    <!-- 
+        dynamic search bar for smartphone screen
+     -->
+
+    <div class="layer1">
+       
+
+         <main>    <section class="sidebar">
+                <div class="sidehead">
+                    <button class="homebtn buttonHover">
+                        <img src="svg/home.svg" alt="Home">
+                        <h3>Home</h3>
+                    </button>
+                    <button class="searchbtn buttonHover">
+                        <img src="svg/search.svg" alt="Search">
+                        <h3>Search</h3>
+                    </button>
+                </div>
+                <div class="sidebody">
+                    <div class="sidebodytop">
+                        <div class="yourlib">
+                            <div class="text buttonHover yourlibtext">
+                                <img src="svg/lib_collapse.svg" alt="">
+                                <h3>Your Library</h3>
+                            </div>
+                            <div class="icon">
+                                <img class="buttonHover S-M-Hover" src="svg/plus.svg" alt="Plus">
+                                <img class="buttonHover S-M-Hover" src="svg/right_arrow.svg" alt="right_arrow">
+                            </div>
+                        </div>
+                        <div class="capsules">
+                            <span class="capsule S-M-Hover">Playlist</span>
+                            <span class="capsule S-M-Hover">Albums</span>
+                        </div>
+                    </div>
+            
+                    <div class="sidebodybottom">
+                        <div class="searchrecent">
+
+                            <img class="buttonHover S-M-Hover" src="svg/search.svg" alt="Search">
+
+                            <span class="recent buttonHover">
+                                Recents
+                                <img src="svg/yourlib_recent.svg" alt="Recent">
+                            </span>
+                        </div>
+
+
+                        <div class="playlist-container">
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <section class="main">
+                <div class="header">
+                    <div class="navigate">
+                        <button>
+                            <svg data-encore-id="icon" role="img" fill="white" aria-hidden="true"
+                                class="Svg-sc-ytk21e-0 cAMMLk IYDlXmBmmUKHveMzIPCF" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0z">
+                                </path>
+                            </svg>
+                        </button>
+                        <button>
+                            <svg data-encore-id="icon" role="img" fill="white" aria-hidden="true"
+                                class="Svg-sc-ytk21e-0 cAMMLk IYDlXmBmmUKHveMzIPCF" viewBox="0 0 16 16">
+                                <path
+                                    d="M4.97.47a.75.75 0 0 0 0 1.06L11.44 8l-6.47 6.47a.75.75 0 1 0 1.06 1.06L13.56 8 6.03.47a.75.75 0 0 0-1.06 0z">
+                                </path>
+                            </svg>
+                        </button>
+
+                    </div>
+                    <div class="profile">
+                        <button>
+                            <svg data-encore-id="icon" fill="white" role="img" aria-hidden="true" viewBox="0 0 16 16"
+                                class="Svg-sc-ytk21e-0 dYnaPI">
+                                <path
+                                    d="M8 1.5a4 4 0 0 0-4 4v3.27a.75.75 0 0 1-.1.373L2.255 12h11.49L12.1 9.142a.75.75 0 0 1-.1-.374V5.5a4 4 0 0 0-4-4zm-5.5 4a5.5 5.5 0 0 1 11 0v3.067l2.193 3.809a.75.75 0 0 1-.65 1.124H10.5a2.5 2.5 0 0 1-5 0H.957a.75.75 0 0 1-.65-1.124L2.5 8.569V5.5zm4.5 8a1 1 0 1 0 2 0H7z">
+                                </path>
+                            </svg>
+                        </button>
+                        <button>
+                            <img src="icons/icon1.webp" alt="">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="playlistname">
+
+                </div>
+                <ul class="musiccontainer">
+                    <li class="music">
+                        <h3>something </h3>
+                        <p>sacscscscsdc</p>
+                    </li>
+                    <ul class="musiccontainer">
+                    </ul>
+
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="playbar">
+                <div class="music-controls">
+
+                    <div class="controls">
+                        <span class="icons previous-song">
+                            <img src="svg/Controls/previous.svg" alt="previous">
+                        </span>
+                        <span class="icons play">
+                            <img src="svg/Controls/play.svg" alt="Play">
+                        </span>
+                        <span class="icons next-song">
+                            <img src="svg/Controls/next.svg" alt="next">
+                        </span>
+                    </div>
+        
+                </div>
+                <div class="seekbar">
+
+                    <h3 id="music-current-time">00:00</h3>
+                    <div class="seek">
+                        <div class="seekline"></div>
+                        <div class="seekpoint"></div>
+                    </div>
+                    <h3 id="music-duration">00:00</h3>
+                </div>
+            </div>
+
+        </footer>
+        <script src="script.js"></script>
+    </div>
+</body>
+
+</html>
