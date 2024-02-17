@@ -73,7 +73,8 @@ async function randomsong(allplaylist) {
 
 // function for API request for playlist
 async function getplaylist() {
-    let fetchplaylist = await fetch("http://192.168.0.193:3000/playlist/");
+    // let fetchplaylist = await fetch("http://192.168.0.193:3000/playlist/");
+    let fetchplaylist = await fetch("tree/main/playlist/");
     let response = await fetchplaylist.text();
     let tempdiv = document.createElement("div");
     tempdiv.innerHTML = response;
